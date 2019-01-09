@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn by doing</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.Quiz{
+			border: 25px solid lightblue;
+  			padding: 25px;
+		}
+  		.arrow-right {
+			  width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid darkblue;
+
+		}
+		.arrow-left {
+			  width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid white;
+		}
+	</style>
+</head>
+<body>
+	<div class="Header" style="text-align: right;height:40px;display: flex;">
+		<div style="background-color: darkblue;width:50px">
+
+		</div>
+		<div class="arrow-right">
+		</div>
+		<div style="width: 200px;background-color: white;margin-right: 30px ">
+			<p style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;font-size: 16px">learning by doing</p>
+		</div>
+		<div class="arrow-left" style="background-color: darkblue">
+		</div>
+		<div style="background-color: darkblue;width:100%">
+
+		</div>
+
+	</div>
+	<div class="Quiz">
+		<ol>
+		  <li>Each computer has a built-in instruction set that it knows how to execute by design.</li>
+		  <img src="hint.png"width="25px">
+		  <div class="alert alert-warning alert-dismissible fade in">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p>recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem".</p>
+		</div>
+		<form action="/action_page.php">
+		  <input type="radio" name="boolean" value="True"> True<br>
+		  <input type="radio" name="boolean" value="False"> False<br>
+		</form>
+		  <div class="alert alert-danger alert-dismissible fade in">
+		  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p><img src="wrong.png"width="25px">Incorrect.Each computer has a set of primitive instructions that it is "wired" to execute. We call this the instruction set of the computer.</p>
+		</div>
+
+		  <li>The computer uses intelligence to execute instructions.</li>
+		  <img src="hint.png"width="25px">
+		  <div class="alert alert-warning alert-dismissible fade in">
+		  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p>Recall that we said that a computer executes the instructions given to it mechanically.</p>
+		</div>
+		<form action="/action_page.php">
+		  <input type="radio" name="boolean" value="True"> True<br>
+		  <input type="radio" name="boolean" value="False"> False<br>
+		</form>
+		  <div class="alert alert-success alert-dismissible fade in">
+		  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p><img src="correct.png"width="25px">Correct. A computer executes instructions automatically. it's main task is to simply execute the instructions given to it and remember their results as the computation goes on. The part that may require intelligence is expressing a computation in terms of those instructions</p>
+		</div>
+		</ol>
+	</div>
+	<div class="footer"  style="text-align: right;background-color: lightblue;height:40px;">
+  			<p style="color:darkblue;margin-right: 25px">Reset this activity</p>
+	</div>
+</body>
+</html>
