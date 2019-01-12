@@ -1,0 +1,3 @@
+1) Used my previous layout example file for the reference of divisions.
+2) W3Schools for the reference of text shadow, box shadow, image to fit into a circle.
+3) Got strucked while developing layouts so used bootstrap template.
