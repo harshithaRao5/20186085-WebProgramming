@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn by doing</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="quizjson.js"></script>
+	<style>
+		.Quiz{
+			border: 25px solid lightblue;
+  			padding: 25px;
+		}
+  		.arrow-right {
+			  width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid darkblue;
+
+		}
+		.arrow-left {
+			  width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid white;
+		}
+	</style>
+</head>
+<body  onload="display(0)">
+	<div class="Header" style="text-align: right;height:40px;display: flex;">
+		<div style="background-color: darkblue;width:50px">
+		</div>
+		<div class="arrow-right">
+		</div>
+		<div style="width: 200px;background-color: white;margin-right: 30px ">
+			<h4 style="text-shadow: 1px 1px 2px darkblue, 0 0 25px darkblue, 0 0 5px darkblue;color:darkblue">learning by doing</h4>
+		</div>
+		<div class="arrow-left" style="background-color: darkblue">
+		</div>
+		<div style="background-color: darkblue;width:100%">
+
+		</div>
+
+	</div>
+	<div class="Quiz">
+		<ul>
+		  <li><p id="question"></p></li>
+		  <img src="hint.png"width="25px" data-toggle="collapse" data-target="#demo">
+		  <div id="demo" class="collapse">
+		  <div class="alert alert-warning alert-dismissible fade in" id="hint">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		</div>
+		</div>
+		<div id="option"></div>
+		 <div id="feedback">
+		</div>
+		</ul>
+		<div>
+			<button id="prev" onclick="prev()" style="float: left; display: none">prev</button>
+			<button id="next" onclick="next1()" style="float: right">next</button>
+		</div>
+	</div>
+	<div class="footer"  style="text-align: right;background-color: lightblue;height:40px;">
+  			<p style="color:darkblue;margin-right: 25px">Reset this activity</p>
+	</div>
+</body>
+</html>
