@@ -1,0 +1,23 @@
+<!-- p>
+  comment works!
+</p> -->
+<div>
+    <label>name:
+      <input type="string" id="name" name="name" [(ngModel)]="detail.name" #name="ngModel">
+    </label><br>
+    <div id="alert" *ngIf="!name.value">your field is empty</div>
+    <label>comment:
+    	<textarea type="string" id="comment" name="comment" [(ngModel)]="detail.comment" #comment="ngModel"></textarea>
+    </label><br>
+    <div id="alert" *ngIf="!comment.value">your field is empty</div>
+    <label>password:
+    	<input type="string" id="password" name="password" [(ngModel)]="detail.password" placeholder="enter your key" #password="ngModel">
+    </label><br>
+    <div id="alert" *ngIf="!password.value">your field is empty</div>
+    <button (click)="check(detail.password)">post your comments!</button><br>
+
+    <div *ngIf="temp">
+    	<button (click)="clear()">clear</button>
+    </div>
+    <button (click)="clear()">clear</button>
+</div>
